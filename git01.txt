@@ -25,3 +25,15 @@ git时光穿梭机
       b、‘+++’表示变动后的文件
 
 2、撤销暂存区文件：git reset HEAD
+
+3、简化显示提交日志信息：git log -n --pretty=oneline，一行一行的输出，一共输出n行
+
+4、版本回退
+      a、git reset --hard HEAD^，有几个^就回退几个版本
+      b、git reset --hard HEAD~n，回退n个版本
+
+5、输出工作目录中的内容，不是本地仓库中的内容：cat 文件名
+
+6、版本前进：git reset --hard 版本标识符，将回退后的版本前进到版本标识符对应的版本
+
+7、git reflog：查看记录在本地的HEAD和分支引用在过去指向的位置。当回退版本后关闭了当前git命令窗口，无法通过git log查看后来的版本的版本标识符，无法前进版本时使用
