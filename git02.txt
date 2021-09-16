@@ -7,5 +7,7 @@ git 分支操作
 2、git checkout -b 分支名：新建分支并切换到新建分支
 3、git branch -d 分支名：删除指定分支
 4、git branch：查看所有分支，并且*号标记当前所在分支
-5、git merge 分支名：合并分支
+5、git merge 分支名：合并分支，只能在主干上使用此命令合并分支
 6、git branch -m|-M oldbranch newbranch：重命名分支，如果newbranch名字已经存在，则需要使用-M强制重命名，否则，使用-m进行重命名
+
+ps. 新建一个分支会把创建分支时主干上所有的文件和创建分支时的文件对应
